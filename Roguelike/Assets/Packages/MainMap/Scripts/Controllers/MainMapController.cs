@@ -8,13 +8,13 @@ public class MainMapController : MonoBehaviour
 {
   //[Inject]
   //private MainMapService _MainMapService;
-  [Inject]
-  private MapViewGroup _MapViewGroup;
+  // [Inject]
+  // private MapViewGroup _MapViewGroup;
   [SerializeField]
   private GameObject _MapCreatedArea;
 
   private void Start()
   {
-    _MapViewGroup.SetMap(_MapCreatedArea,EnumDefine.MainMapType.Wall);
+    //_MapViewGroup.SetMap(_MapCreatedArea,EnumDefine.MainMapType.Wall);
   }
 }
