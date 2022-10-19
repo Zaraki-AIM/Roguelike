@@ -4,10 +4,10 @@ namespace Status.Views
 {
   public class LevelView:CommonTextView
   {
-    private readonly string LevelTextTemplate = $"Lv：";
-    public void SetText(string targetText)
+    private readonly string LevelTextTemplate = "Lv：";
+    public void SetLevel(int nowLevel)
     {
-        _Text.text = $"{LevelTextTemplate}{targetText}";
+        _Text.text = $"{LevelTextTemplate}{nowLevel.ToString()}";
     }
   }
 }
